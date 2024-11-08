@@ -5,7 +5,7 @@ import os
 
 def csv_check(symbol):
     # Directory and file paths
-    csv_dir = "./4/csv"
+    csv_dir = "./csv"
     historical_data_csv = f"{csv_dir}/{symbol}_2weeks_data.csv"
     predicted_prices_csv = f"{csv_dir}/{symbol}_price_predictions.csv"
 
