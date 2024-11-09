@@ -74,6 +74,8 @@ def plot(historical_file, predictions_file, ticker):
 
     # Maximize the window for mplfinance
     mng = plt.get_current_fig_manager()
+    mng.set_window_title(str(ticker) + "'s Historical Prices and Predictions")
+
 
     # Windows method to maximize the plot window
     try:
