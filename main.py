@@ -16,10 +16,10 @@ def csv_check(symbol):
 
 def main():
     # Call the GUI to get user input
-    ticker, current_price, choice = run_gui()
+    ticker, choice = run_gui()
 
     # Ensure that the user entered valid input
-    if not ticker or not current_price or not choice:
+    if not ticker or not choice:
         print("Operation canceled or invalid input.")
         return
 

@@ -39,7 +39,6 @@ class Intro(QWidget):
 
         # Variables to hold data for later use
         self.ticker = None
-        self.price = None
         self.choice = None
 
     def center(self):
@@ -60,11 +59,10 @@ class Intro(QWidget):
 
         # Determine data type choice
         self.choice = {"Stocks": "1", "Crypto": "2", "Futures": "3"}[data_type]
-        self.price = 100  # Replace with actual price fetching logic
         self.close()
 
     def get_results(self):
-        return self.ticker, self.price, self.choice
+        return self.ticker, self.choice
 
 def run_gui():
     app = QApplication(sys.argv)
